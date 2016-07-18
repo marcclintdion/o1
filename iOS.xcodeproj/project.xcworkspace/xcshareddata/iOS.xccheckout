@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA918C88-F5BF-4135-B9A4-485B24AE8E40</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>692E362F-2BC8-4C6E-8476-73F8E0855B54</key>
+		<string>https://github.com/marcclintdion/OSX_WIN_iOS_NOV_23.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>692E362F-2BC8-4C6E-8476-73F8E0855B54</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/marcclintdion/OSX_WIN_iOS_NOV_23.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>692E362F-2BC8-4C6E-8476-73F8E0855B54</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>692E362F-2BC8-4C6E-8476-73F8E0855B54</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CopperEntrance_NOV30</string>
+		</dict>
+	</array>
+</dict>
+</plist>
