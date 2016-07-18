@@ -200,16 +200,10 @@ void main()
     specular                =   max(pow(nDotL0, 1000.0 * mask0Texture.g), 0.0) * mask0Texture.r;
     
     
-    //gl_FragColor            =  colorTexture * highp vec4(mixLightLinear) * highp vec4( pow(1.0, 0.4545455), pow(0.95, 0.4545455), pow(0.9, 0.4545455), 1.0)* 1.1 + environmentColor * 0.0    ;
-    
-    
-    
-    
     highp vec3 mixColor     =  mix(     skyColorTexture.xyz * mix(VnDotL0, nDotL1, 0.2) * 7.0,   colorTexture.xyz * mix(VnDotL0, nDotL1, 0.2) * 2.2   , 0.3  );
     
     
     gl_FragColor.xyz        =  pow(    mixColor.xyz   ,   highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)    )   *  pow(   highp vec3(1.0, 0.8779211, 0.7021922) , highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)   ) ;
-    
     
     
     //gl_FragColor.xyz        =  pow(   skyColorTexture.xyz, highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)   )  ;
