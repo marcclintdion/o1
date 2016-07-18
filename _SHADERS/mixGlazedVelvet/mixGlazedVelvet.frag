@@ -23,6 +23,8 @@ uniform     sampler2D       NormalMAP;
             highp   float   nDotL0;
             highp   float   nDotL1;
             highp   float   VnDotL0;
+            highp   float   VnDotL1;
+
             highp   float   mixLightLinear;
 
 uniform     highp   vec4    light0_POS;
@@ -182,7 +184,7 @@ void main()
     bakedNormals.xyz        =   normalize(bakedNormals.xyz - 0.5);
 
     VnDotL0                 =   max(       dot(    normalize(vertexNormals.xyz), normalize(lightPos0_PASS)      )    , 0.0      )    ;
-    
+    VnDotL1                 =   max(       dot(    normalize(vertexNormals.xyz), normalize(lightPos1_PASS)      )    , 0.0      )    ;
     
     modelViewMatrix_PASS[0] =   column0_MVM;
     modelViewMatrix_PASS[1] =   column1_MVM;
@@ -197,17 +199,16 @@ void main()
     
     //mixLightLinear          =   pow(                mix( VnDotL0,          max(        mix((nDotL0), nDotL1, 0.2)           , 0.0 )                , 0.8 )          , 0.4545455      );
    
-    specular                =   max(pow(nDotL0, 1000.0 * mask0Texture.g), 0.0) * mask0Texture.r;
+    specular                =   max(pow(mix(VnDotL1, nDotL1, 0.5), 30.0), 0.0);
     
     
     highp vec3 mixColor     =  mix(     skyColorTexture.xyz * mix(VnDotL0, nDotL1, 0.2) * 7.0,   colorTexture.xyz * mix(VnDotL0, nDotL1, 0.2) * 2.2   , 0.3  );
     
     
-    gl_FragColor.xyz        =  pow(    mixColor.xyz   ,   highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)    )   *  pow(   highp vec3(1.0, 0.8779211, 0.7021922) , highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)   ) ;
+    gl_FragColor.xyz        =  pow(    mixColor.xyz   ,   highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)    ) * highp vec3(1.0, 0.9425360, 0.8515444)   ;
     
     
-    //gl_FragColor.xyz        =  pow(   skyColorTexture.xyz, highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)   )  ;
-    
+    //gl_FragColor.xyz        =  highp vec3(1.0, 0.9425360, 0.8515444)   ;
     
     
     gl_FragColor.a          =   colorTexture.a;
