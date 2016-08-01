@@ -27,7 +27,11 @@ SelectShader(shaderNumber);
     glBindTexture(GL_TEXTURE_2D, o1_SKY); 
     glActiveTexture (GL_TEXTURE3);  
     glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture[0]); 
-    glActiveTexture (GL_TEXTURE4);  
-    glBindTexture(GL_TEXTURE_2D, o1_MASK0); 
+    glActiveTexture (GL_TEXTURE4);
+    glBindTexture(GL_TEXTURE_2D, o1_MASK0);
+    glActiveTexture (GL_TEXTURE5);
+    glBindTexture(GL_TEXTURE_2D, o1_POS);
+
+
     //-----------------------------------------------------  
     glDrawElements(GL_TRIANGLES, o1_INDEX_COUNT, GL_UNSIGNED_INT, 0); 

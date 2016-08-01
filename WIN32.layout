@@ -6,12 +6,12 @@ LeftChar=1
 Open=0
 Top=0
 [Editor_0]
-CursorCol=1
-CursorRow=61
-TopLine=54
+CursorCol=27
+CursorRow=64
+TopLine=42
 LeftChar=1
-Open=0
+Open=1
 Top=0
 [Editors]
-Order=
+Order=0,-1
 Focused=-1

@@ -1,5 +1,5 @@
-Pass_MIDDLE_Mouse[0]         = 0;  
-Pass_MIDDLE_Mouse[1]         = 0;  
+Pass_MIDDLE_Mouse[0]         = -66;  
+Pass_MIDDLE_Mouse[1]         = -8;  
 //-------------------------------------------------------                 
 Pass_MIDDLE_CONTROL_Mouse    = 0;  
 //-------------------------------------------------------                 

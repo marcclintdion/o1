@@ -12,22 +12,34 @@
 	<dict>
 		<key>41D40FC0150257108D4403428CD690C4C03502CB</key>
 		<string>https://bitbucket.org/marcclintdion/osx_win_ios</string>
+		<key>B6743909108468608CD626C2445EFD26BA7A0E4E</key>
+		<string>https://github.com/marcclintdion/o1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OSX.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>41D40FC0150257108D4403428CD690C4C03502CB</key>
+		<string>../../../OSX_WIN_iOS</string>
+		<key>B6743909108468608CD626C2445EFD26BA7A0E4E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/marcclintdion/osx_win_ios</string>
+	<string>https://github.com/marcclintdion/o1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>41D40FC0150257108D4403428CD690C4C03502CB</string>
+	<string>B6743909108468608CD626C2445EFD26BA7A0E4E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6743909108468608CD626C2445EFD26BA7A0E4E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>o1</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

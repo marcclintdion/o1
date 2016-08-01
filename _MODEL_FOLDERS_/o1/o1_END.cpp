@@ -17,7 +17,13 @@
     { 
         glDeleteTextures(1, &o1_MASK0); 
         o1_MASK0  = 0; 
-    } 
+    }
+    if(o1_POS  != 0)
+    { 
+        glDeleteTextures(1, &o1_POS);
+        o1_POS  = 0; 
+    }
+
     //-------------------------------------------------- 
     if(o1_VBO  != 0) 
     { 

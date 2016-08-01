@@ -8,7 +8,7 @@ GLuint o1_INDICES_VBO;
 GLuint o1_EMIT; 
 GLuint o1_DOT3; 
 GLuint o1_SKY; 
-
+GLuint o1_POS;
 GLuint o1_MASK0; 
 
 //---------------------------------------------
