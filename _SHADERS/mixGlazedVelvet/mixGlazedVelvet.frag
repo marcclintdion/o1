@@ -208,7 +208,7 @@ void main()
     gl_FragColor.xyz        =  pow(    mixColor.xyz   ,   highp vec3(1.0/2.2, 1.0/2.2, 1.0/2.2)    ) * highp vec3(1.0, 0.9425360, 0.8515444)   ;
     
     
-    //gl_FragColor.xyz        =  highp vec3(1.0, 0.9425360, 0.8515444)   ;
+    //gl_FragColor.xyz        =  colorTexture.xyz   ;
     
     
     gl_FragColor.a          =   colorTexture.a;

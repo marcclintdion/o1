@@ -70,6 +70,13 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink,
 	{
 		NSOpenGLPFADoubleBuffer,
 		NSOpenGLPFADepthSize, 24,
+        NSOpenGLPFASampleAlpha,
+        NSOpenGLPFASupersample,
+        NSOpenGLPFAMultisample,
+        NSOpenGLPFASampleBuffers, 1,
+        NSOpenGLPFASamples, 4,
+        
+        
 
 		0
 	};

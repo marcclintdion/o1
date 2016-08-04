@@ -497,7 +497,7 @@ renderDepthShadow_PENUMBRA_PASS();
     
     //-------------------------
 #elif TARGET_OS_MAC == 1 || WIN32 == 1
-    glEnable(GL_MULTISAMPLE_ARB);//---------------------------------------------- MSAA SWITCH --- WIN-OSX -ON
+    //glEnable(GL_MULTISAMPLE_ARB);//---------------------------------------------- MSAA SWITCH --- WIN-OSX -ON
 
 #endif
 //----------------------
@@ -550,6 +550,7 @@ frameTime = frameEnd - frameStart;
 if(CONSOLE_OUTPUT)
 {
     #ifdef __APPLE__
+    glDisable(GL_MULTISAMPLE_ARB);
     //NSLog(@"==============");
     //NSLog(@"frameTime = %i milliseconds", (int)frameTime);
     //NSLog(@"==============");

@@ -65,7 +65,7 @@
 //=========================================
     glGenTextures( 1, &o1_EMIT);
     glBindTexture( GL_TEXTURE_2D, o1_EMIT);
-    loadTexture("_MODEL_FOLDERS_/o1/o1_EMIT.png"); 
+    loadTexture("_MODEL_FOLDERS_/o1/o1_EMIT.png");
 
     glGenTextures( 1, &o1_DOT3); 
     glBindTexture( GL_TEXTURE_2D, o1_DOT3);
