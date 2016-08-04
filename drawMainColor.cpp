@@ -29,7 +29,11 @@ shaderNumber = 25;
 
 
 shaderNumber = 19;//mixedGlazedVelvet
-
+glEnable(GL_BLEND);
+glCullFace(GL_NONE);
+glEnable(GL_SAMPLE_ALPHA_TO_COVERAGE_ARB);
+glEnable(GL_ALPHA_TEST);
+glAlphaFunc(GL_GEQUAL, 0.25f);
 #include "_MODEL_FOLDERS_/o1/o1_RENDER.cpp"
 
 

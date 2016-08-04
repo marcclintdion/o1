@@ -68,7 +68,7 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink,
 {
     NSOpenGLPixelFormatAttribute attrs[] =
 	{
-		NSOpenGLPFADoubleBuffer,
+		NSOpenGLPFADoubleBuffer, 1,
 		NSOpenGLPFADepthSize, 24,
         NSOpenGLPFASampleAlpha,
         NSOpenGLPFASupersample,
