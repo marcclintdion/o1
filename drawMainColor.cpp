@@ -65,10 +65,10 @@ shaderNumber = 20;
 //================================================================================================================
 
 shaderNumber = 19;
-glDisable(GL_CULL_FACE);
+//glDisable(GL_CULL_FACE);
 
 
-glEnable(GL_CULL_FACE);
+//glEnable(GL_CULL_FACE);
 
 
 
